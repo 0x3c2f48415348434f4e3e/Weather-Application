@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <title>Weather App</title>
+</head>
+<body class="bg-blue-950 text-white">
+    <h1 class="text-center text-6xl">Weather Application</h1>
+    <main class="flex justify-center mt-10">
+
+    <form>
+        <input type="text" placeholder="Search for a city" class="border-b-2 border-white bg-blue-950" id="location"/>
+        <input type="submit" class="bg-red-600 p-3 rounded-md" id="userSubmit"/>
+        <br/>
+        <p class="text-red-600" id="status"></p>
+    </form>
+
+</main>
+
+<div class="flex justify-center mt-40">
+<div class="bg-white w-72 h-96 text-black">
+    <h1 id="city"></h1>
+    <h1 id="temperature"></h1>
+    <img src="" alt="image" id="image"/>
+    <h3 id="description"></h3>
+</div>
+</div>
+
+<script src="./interaction.js" type="module"></script>
+</body>
+</html>
